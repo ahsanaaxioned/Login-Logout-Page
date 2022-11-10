@@ -293,11 +293,13 @@ header .wrapper {
   background-size: cover;
 }
 
-.wrapper {
+.login-page .wrapper,
+.home-page .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 .heading {
@@ -310,6 +312,7 @@ header .wrapper {
 .my-form { 
   min-width: 340px;
   width: 25%;
+  margin-top: 15px;
  }
 
 .input-group {
@@ -323,18 +326,16 @@ header .wrapper {
   border-radius: 4px;
   font-size: 18px;
   outline: none;
+  text-transform: lowercase;
 }
 
 .input-group.fail input { border-color: #fc1505; }
 .input-group.success input { border-color: #2efc05; }
 
-.error { 
-  font-weight: 600;
-  visibility: hidden;
-}
+.error { visibility: hidden; }
 
 .input-group.fail .error {
-  color: #fc1505;
+  color: #e11b1b;
   visibility: visible;
 }
 
@@ -361,6 +362,17 @@ header .wrapper {
 .login:hover {
   border: 2px solid transparent;
   color: #000;
+}
+
+html.hidden { overflow-y: hidden; }
+
+span.wrong {
+  font-size: 19px;
+  color: #fff;
+  color: #e11b1b;
+  position: absolute;
+  top: 52px;
+  left: 36%;
 }
 /*=================================
   main styling ends here
