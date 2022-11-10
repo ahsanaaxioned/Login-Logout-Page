@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -10,10 +10,10 @@
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="shortcut icon" href="favicon.ico" />
   <!--font-awesome link for icons-->
-  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
+  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
 </head>
 
 <body>
@@ -21,11 +21,34 @@
   <div class="container">
     <!--main section start-->
     <main>
-
+      <section class="login-page">
+        <div class="wrapper">
+          <h1 class="heading">login here</h1>
+          <form action="#FIXME" method="post" class="my-form" name="form">
+            <div class="input-group">
+              <input type="text" name="Email" class="username" placeholder="enter your email...">
+              <span class="error">error</span>
+            </div>
+            <div class="input-group">
+              <input type="text" name="Password" class="Password" placeholder="enter your password...">
+              <span class="error">error</span>
+            </div>
+            <div class="controller">
+              <input type="submit" class="login">
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
     <!--main section end-->
+    <!--footer section start-->
+    <footer>
+      <p class="copy">&#169;login form.all reserved.</p>
+    </footer>
+    <!--footer section end-->
   </div>
   <!--container end-->
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>
