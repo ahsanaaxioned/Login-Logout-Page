@@ -61,6 +61,15 @@ if (form) {
         failMsg.className = "wrong";
         failMsg.innerText = "please enter a valid details"
         wrapper.insertBefore(failMsg, wrapper.children[1]);
+        inputGroup = document.querySelectorAll(".input-group")
+        inputGroup.forEach(ele => {
+          const error = document.querySelectorAll(".error");
+          error.forEach(el=>{
+            el.style.visibility="hidden"
+          })
+          ele.classList.remove("success");
+          ele.classList.add("fail");
+        });
       }
     } else {
       validate(email, usernameRegex, emailRegex);
